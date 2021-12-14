@@ -1,10 +1,8 @@
 ---
 - hosts: agent
   become: true
-  become_user: edureka
+  become_user: root
 
-  vars:
-   ansible_become_pass: edureka
   tasks:
   - name: Install Git
     package:
